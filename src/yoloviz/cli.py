@@ -12,7 +12,7 @@ from .dataset import EmptyDatasetError
 from .viewer import Viewer
 
 
-@click.command(help=app_doc)
+@click.command(help=app_doc, context_settings={"show_default": True})
 @click.argument("dataset_directory", type=Path)
 @click.option("-c", "--color", type=str, default="red")
 @click.option("-t", "--thickness", type=int, default=5)
