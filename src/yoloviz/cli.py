@@ -7,7 +7,7 @@ from pathlib import Path
 import pyglet
 import rich_click as click
 
-from .__init__ import __doc__ as app_doc
+from . import __doc__ as app_doc
 from .dataset import EmptyDatasetError
 from .viewer import Viewer
 
