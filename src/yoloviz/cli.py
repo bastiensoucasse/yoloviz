@@ -24,7 +24,7 @@ def cli(
 ) -> None:
     """Runs the command-line interface."""
     try:
-        _viewer = Viewer(dataset_directory, color=color, thickness=thickness)
+        _viewer = Viewer(dataset_directory, color=color, thickness=thickness)  # type: ignore[abstract]
     except EmptyDatasetError as e:
         print(e)  # noqa: T201
         return
